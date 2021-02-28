@@ -23,14 +23,15 @@ class _AddApp extends State<AddApp> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('AddMemo'),
         bottom: TabBar(
           controller: tab_ctr,
           tabs: <Tab>[
             Tab(
-              icon: Icon(Icons.looks_one),
+              text: 'ADD!!',
             ),
             Tab(
-              icon: Icon(Icons.looks_two),
+              text: 'TEMP',
             ),
           ],
         ),
