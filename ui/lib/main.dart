@@ -2,6 +2,7 @@ import 'package:ch13_01/addApp.dart';
 import 'package:flutter/material.dart';
 import 'firebaseApp.dart';
 import 'addApp.dart';
+import 'edit.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => FirebaseApp(),
         '/add': (context) => AddApp(),
+        '/edit': (context) => Edit(),
       },
     );
   }

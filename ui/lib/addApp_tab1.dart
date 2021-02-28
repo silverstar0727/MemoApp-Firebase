@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class AddApp1 extends StatefulWidget {
@@ -31,7 +32,9 @@ class _AddApp1 extends State<AddApp1> {
                   controller: titleController,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(), hintText: 'title'),
+                      border: OutlineInputBorder(),
+                      labelText: 'title',
+                      fillColor: Colors.blueAccent),
                 ),
               ),
               Padding(
@@ -39,14 +42,16 @@ class _AddApp1 extends State<AddApp1> {
                 child: TextField(
                   controller: contentController,
                   keyboardType: TextInputType.text,
-                  decoration: InputDecoration(hintText: 'content'),
+                  decoration: InputDecoration(labelText: 'content'),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(15),
-                child: RaisedButton(
+                child: FlatButton(
                   onPressed: () {},
-                  child: Text('Save!!'),
+                  child: Text('저장하기'),
+                  shape: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(1)),
                 ),
               ),
             ],
