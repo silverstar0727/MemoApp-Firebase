@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "710455488206",
+    "project_id": "bubbly-trail-290901",
+    "storage_bucket": "bubbly-trail-290901.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710455488206:android:22f436cc50af24b8056a9f",
+        "android_client_info": {
+          "package_name": "com.example.ch0901"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710455488206-hkm0cog6g3su152ihnmp44nlavplr6ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKiPQe_ANhuL0c6xoRHRNryNIWXKGUAAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710455488206-hkm0cog6g3su152ihnmp44nlavplr6ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710455488206:android:70cd4dbcc98095a5056a9f",
+        "android_client_info": {
+          "package_name": "com.example.ch13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710455488206-hkm0cog6g3su152ihnmp44nlavplr6ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKiPQe_ANhuL0c6xoRHRNryNIWXKGUAAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710455488206-hkm0cog6g3su152ihnmp44nlavplr6ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
