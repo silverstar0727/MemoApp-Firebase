@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'addApp_tab1.dart';
 import 'addApp_tab2.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class AddApp extends StatefulWidget {
   @override
@@ -21,6 +22,8 @@ class _AddApp extends State<AddApp> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    final DatabaseReference reference = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
       appBar: AppBar(
         title: Text('AddMemo'),
@@ -37,7 +40,7 @@ class _AddApp extends State<AddApp> with SingleTickerProviderStateMixin {
         ),
       ),
       body: TabBarView(
-        children: <Widget>[AddApp1(), AddApp2()],
+        children: <Widget>[AddApp1(reference), AddApp2()],
         controller: tab_ctr,
       ),
     );

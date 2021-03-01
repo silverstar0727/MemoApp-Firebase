@@ -14,4 +14,12 @@ class Memo {
         title = snapshot.value['title'],
         content = snapshot.value['content'],
         createTime = snapshot.value['createTime'];
+
+  toJson(){
+    return{
+      'title': title,
+      'content': content,
+      'createTime': createTime,
+    };
+  }
 }

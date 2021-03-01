@@ -3,6 +3,7 @@ import 'memo.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'addApp.dart';
 
 class FirebaseApp extends StatefulWidget {
   static FirebaseAnalytics analytics = FirebaseAnalytics();
@@ -92,20 +93,11 @@ class _FirebaseApp extends State<FirebaseApp> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: (){
-          Navigator.of(context).pushNamed('/add');
+          setState(() {
+            Navigator.of(context).pushNamed('/add', arguments: reference);
+          });
         },
       ),
     );
-  }
-
-  Future<void> _sendAnalyticsEvent() async {
-    await analytics.logEvent(
-      name: 'test',
-      parameters: <String, dynamic>{
-        'string': 'hello flutter',
-        'int': 100,
-      },
-    );
-    print('성공');
   }
 }
